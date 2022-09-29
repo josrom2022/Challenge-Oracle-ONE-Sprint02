@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" class="logo">
+    </header>
+    <main>
+        <div id="div-desaparece" class="botones-home">
+            
+                <input class="btn-iniciar" type="submit" value="Iniciar Juego" id="iniciar-juego"
+                    onclick="iniciarJuego();">
+        </div>
+        <div id="div-aparece-ahorcado" class="canvas">
+            <div class="subrayado">
+                <input class="btn-nuevo" type="submit" value="Juego Nuevo" id="nuevo-juego"
+                    onclick="window.location.reload();">
+            </div>
+            <!-- Canvas -->
+            <canvas id="forca" width="1200" height="860"></canvas>
+            <img id="imgSource" src="img/finish.png" />
+        </div>
+    </main>
+    <!-- JavaScript -->
+    <script src="horca.js"></script>
+    <script src="tablero.js"></script>
+</body>
+
+</html>
